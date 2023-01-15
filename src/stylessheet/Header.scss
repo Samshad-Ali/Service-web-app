@@ -1,0 +1,62 @@
+@import "styleSource";
+
+nav{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $first-clr;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    box-shadow: 0 0 10px #222;
+    >div{
+        
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        >h1{
+            text-transform: uppercase;
+            display: flex;
+            font-size: 2rem;
+            color: $third-clr;
+            gap: 10px;
+            align-items: center;
+        }
+        >img{
+            width: 10%;
+            border-radius: 50%;
+            
+            
+        }
+    }
+    >main{
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+        >.link{
+            color:black;
+            margin: 1rem;
+            position: relative;
+            &:hover{
+                color: $third-clr;
+                font-weight: bold;
+            }
+            &::after{
+                content: '';
+                width: 0%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                position: absolute;
+                transition: width .5s ease-in;
+            border-bottom: 2px solid $third-clr;
+            }
+            &:hover::after{
+                width: 100%;
+            }
+        }
+       
+    }
+}

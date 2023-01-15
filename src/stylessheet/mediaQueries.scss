@@ -1,0 +1,135 @@
+@import "./styleSource.scss";
+@media only screen and (max-width: 900px) {
+  nav {
+    > img {
+      width: 15%;
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  nav {
+    > div {
+      > h1 {
+        display: none;
+      }
+      > img {
+        width: 60%;
+      }
+    }
+  }
+
+  .home {
+    > main {
+      align-items: flex-start;
+      > h1 {
+        font-size: 3rem;
+      }
+      > p {
+        font-size: 1.4rem;
+      }
+    }
+    &::before {
+      border-radius: 0 0 50px 50px;
+    }
+  }
+  .home-2 {
+    flex-direction: column;
+    > img {
+      width: 80%;
+    }
+    > div {
+      width: 100%;
+      > p {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+      }
+    }
+  }
+
+  .home-3 {
+    > div {
+      width: 100%;
+      border-radius: 0;
+      padding: 1em;
+      > p {
+        line-height: 120%;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .home-4 {
+    > div {
+      width: 100%;
+      padding: 0.5em;
+      > article {
+        > div {
+          width: 6rem;
+          height: 6rem;
+          font-size: 0.8rem;
+          > p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .contact {
+    > form {
+      border-radius: 2px;
+      width: 100%;
+      > div {
+        > input {
+          width: 100%;
+        }
+        > button {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 2em;
+    > p {
+      font-size: 0.8rem;
+    }
+    h2 {
+      display: none;
+    }
+    > div {
+      > p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 516px) {
+  nav {
+    padding: 1em 0.2em;
+    gap: 30px;
+
+    > div {
+      width: 15%;
+      > h1 {
+        display: none;
+      }
+      > img {
+        width: 90%;
+      }
+    }
+    > main {
+      width: 80%;
+      padding: 0;
+      > .link {
+        margin-left: 0.4em;
+        font-size: 0.8rem;
+        font-weight: bold;
+      }
+    }
+  }
+}

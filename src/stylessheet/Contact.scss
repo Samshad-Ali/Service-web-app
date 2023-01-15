@@ -1,0 +1,69 @@
+@import './styleSource.scss';
+
+.contact{
+    width: 100%;
+    height: 70vh;
+    background-color: $second-clr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $first-clr;
+    flex-direction: column;
+    padding: 2rem 0;
+    >h1{
+        margin-bottom: .5em;
+        border-bottom: 2px solid $first-clr;
+        color: $first-clr;
+    }
+    >form{
+        width: 70%;
+        color: $second-clr;
+        height: 80%;
+        display: flex;
+       justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        background-color: $first-clr;
+        border-radius: 0 200px 200px 0;
+        >div{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding:0 4em;
+            margin-bottom: .7em;
+            gap: 1px;
+            >label{
+                align-self: flex-start;
+                font:900 1rem $text-3;
+            
+            }
+            >input{
+                align-self: stretch;
+                height:2.5em;
+                width: 70%;
+                padding-left: .6em;
+                outline: none;  
+                border: 2px solid $third-clr;
+                border-radius: 5px;
+                color:$second-clr;
+            }
+            >button{
+                color: $first-clr;
+                background-color: $third-clr;
+                font-size: 1.4rem;
+                border: none;
+                padding: .5em 1em;
+                border-radius: 10px;
+                &:hover{
+                   background-color: white;
+                   color: $third-clr;
+                   border: 1px solid $third-clr;
+                }
+            }
+            
+        }
+    
+    }
+}
